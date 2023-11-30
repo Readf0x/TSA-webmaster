@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "aaron-bond.better-comments",
+    "ms-vscode.vscode-typescript-next",
+    "svelte.svelte-vscode",
+    "ardenivanov.svelte-intellisense"
+  ]
+}
