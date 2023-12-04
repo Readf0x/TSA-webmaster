@@ -1,4 +1,5 @@
 <script lang="ts">
+  import ThemeSwitch from "$lib/components/ThemeSwitch.svelte";
   import "./global.scss"
   import "@fontsource-variable/inter"
 </script>
@@ -8,5 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </svelte:head> -->
+
+<ThemeSwitch />
 
 <slot />
