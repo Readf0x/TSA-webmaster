@@ -1,5 +1,5 @@
 :root {
-  --font: "Inter Variable", sans-serif;
+  --font: "Inter Variable";
   font-family: var(--font);
 }
 
@@ -8,12 +8,12 @@ html, body {
   color: var(--tx-0);
 }
 
-:root {
-  @media (prefers-color-scheme: dark) {
+body {
+  &.dark {
     --bg-0: black;
     --tx-0: white;
   }
-  @media (prefers-color-scheme: light) {
+  &.light {
     --bg-0: white;
     --tx-0: black;
   }

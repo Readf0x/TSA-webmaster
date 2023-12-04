@@ -1,10 +1,10 @@
 <script lang="ts">
   var showcaseElems: any[] = Array.from({length: 9}, (_, i) => (i + 1) * 100)
 
-  setInterval(() => {
-    showcaseElems.push(900 - showcaseElems.shift())
-    showcaseElems = showcaseElems
-  }, 100)
+  // setInterval(() => {
+  //   showcaseElems.push(900 - showcaseElems.shift())
+  //   showcaseElems = showcaseElems
+  // }, 100)
 </script>
 
 <h1>TSA Project</h1>
@@ -27,7 +27,7 @@
     width: 150px;
     &-item {
       margin: 0;
-      transition: 0.5s;
+      transition: font-weight 0.5s;
     }
   }
 </style>

@@ -7,6 +7,6 @@ function assignTheme(): Writable<Theme> {
     localStorage.getItem("theme") ||
     window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark" ||
     "light")
-  else return writable("light")
+  else return writable("dark")
 }
 export const theme: Writable<Theme> = assignTheme()

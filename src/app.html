@@ -8,5 +8,8 @@
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
+		<script>
+			document.body.classList.add(window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+		</script>
 	</body>
 </html>
