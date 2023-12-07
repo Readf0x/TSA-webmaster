@@ -9,11 +9,11 @@ html, body {
 }
 
 body {
-  &.dark {
+  &#dark {
     --bg-0: black;
     --tx-0: white;
   }
-  &.light {
+  &#light {
     --bg-0: white;
     --tx-0: black;
   }

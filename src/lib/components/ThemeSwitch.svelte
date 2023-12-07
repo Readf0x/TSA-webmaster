@@ -1,25 +1,31 @@
 <script lang="ts">
-  import { theme as themeStore } from "$lib/stores";
+  import { onMount } from "svelte";
 
-  let theme: boolean
-  $: theme = $themeStore == "light"
+  let theme: boolean = true;
+
+  function themeChangeHandler() {
+    theme = !theme
+    const x = theme ? "light" : "dark"
+    document.body.id = x
+    localStorage.setItem("theme", x)
+  }
+
+  onMount(() => {
+    if(
+      ("theme" in localStorage &&
+      localStorage.theme === "dark") ||
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+      themeChangeHandler()
+  })
 </script>
 
-<label class="themeSwitch">
+<label class="themeSwitch" for="ThemeSwitch">
   <input
     type="checkbox"
     class="themeSwitch-checkbox"
+    id="ThemeSwitch"
     bind:checked={theme}
-    on:click={() => {
-      if ($themeStore == "light") {
-        $themeStore = "dark"
-        document.body.classList.remove("light")
-      } else {
-        $themeStore = "light"
-        document.body.classList.remove("dark")
-      }
-      document.body.classList.add($themeStore)
-    }}
+    on:click={() => themeChangeHandler()}
   >
   <span class="themeSwitch-slider" />
 </label>
