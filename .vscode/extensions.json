@@ -4,6 +4,7 @@
     "aaron-bond.better-comments",
     "ms-vscode.vscode-typescript-next",
     "svelte.svelte-vscode",
-    "ardenivanov.svelte-intellisense"
+    "ardenivanov.svelte-intellisense",
+    "github.vscode-pull-request-github"
   ]
 }
