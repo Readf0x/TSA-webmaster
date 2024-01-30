@@ -1,37 +1,19 @@
-<script lang="ts">
-  var showcaseElems: any[] = Array.from({length: 9}, (_, i) => (i + 1) * 100)
-
-  setInterval(() => {
-    showcaseElems.push(900 - showcaseElems.shift())
-    showcaseElems = showcaseElems
-  }, 100)
+<script>
+  import FontTable from '$lib/components/FontTable.svelte';
 </script>
 
-<h1>TSA Project</h1>
-<h2>Webmaster category</h2>
-<p>We <b>will</b> win!</p>
+<h1>Heading 1 <span class="c0 si">Heading 1</span></h1>
+<h2>Heading 2 <span class="c1 si">Heading 2</span></h2>
+<h3>Heading 3 <span class="c0 si">Heading 3</span></h3>
+<h4>Heading 4 <span class="c1 si">Heading 4</span></h4>
 
-<p>Need proof? look at this <i>sweet</i> animation:</p>
+<p>
+  <span class="c0">color 1</span> <br>
+  <span class="c1 sb">color 2 in bold</span> <br>
+  <span class="c2 si">color 3 in italic</span> <br>
+  <span class="f0">font 0</span> <br>
+  <span class="f1">font 1</span> <br>
+  <span class="f2">font 2</span> <br>
+</p>
 
-<div class="variable-showcase">
-  {#each showcaseElems as i}
-  <p class="variable-showcase-item" style="font-weight: {i}">How cool is this?!</p>
-  {/each}
-</div>
-
-<style lang="scss">
-  .variable-showcase {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 150px;
-    &-item {
-      margin: 0;
-      transition: font-weight 0.5s;
-      color: var(--primary);
-    }
-  }
-  h1, b {
-    color: var(--accent);
-  }
-</style>
+<FontTable></FontTable>
