@@ -91,7 +91,8 @@
     border: $border;
     tr {
       border: $border;
-      th, td {
+      th,
+      td {
         border: $border;
         padding: 5px 8px;
       }

@@ -2,16 +2,18 @@
 @font-face {
   font-family: "DM Serif Display";
   src: url("./dm-serif-display/DMSerifDisplay-Regular.ttf");
-  src: local("DM Serif Display"),
-       url("./dm-serif-display/DMSerifDisplay-Regular.ttf") format("truetype");
+  src:
+    local("DM Serif Display"),
+    url("./dm-serif-display/DMSerifDisplay-Regular.ttf") format("truetype");
 
   font-style: normal;
 }
 @font-face {
   font-family: "DM Serif Display";
   src: url("./dm-serif-display/DMSerifDisplay-Italic.ttf");
-  src: local("DM Serif Display"),
-       url("./dm-serif-display/DMSerifDisplay-Italic.ttf") format("truetype");
+  src:
+    local("DM Serif Display"),
+    url("./dm-serif-display/DMSerifDisplay-Italic.ttf") format("truetype");
 
   font-style: italic;
 }
@@ -20,8 +22,9 @@
 @font-face {
   font-family: "Kanit";
   src: url("./kanit/Kanit-Thin.ttf");
-  src: local("Kanit"),
-       url("./kanit/Kanit-Thin.ttf") format("truetype");
+  src:
+    local("Kanit"),
+    url("./kanit/Kanit-Thin.ttf") format("truetype");
 
   font-weight: 100;
   font-style: normal;
@@ -29,8 +32,9 @@
 @font-face {
   font-family: "Kanit";
   src: url("./kanit/Kanit-ThinItalic.ttf");
-  src: local("Kanit"),
-       url("./kanit/Kanit-ThinItalic.ttf") format("truetype");
+  src:
+    local("Kanit"),
+    url("./kanit/Kanit-ThinItalic.ttf") format("truetype");
 
   font-weight: 100;
   font-style: italic;
@@ -38,8 +42,9 @@
 @font-face {
   font-family: "Kanit";
   src: url("./kanit/Kanit-ExtraLight.ttf");
-  src: local("Kanit"),
-       url("./kanit/Kanit-ExtraLight.ttf") format("truetype");
+  src:
+    local("Kanit"),
+    url("./kanit/Kanit-ExtraLight.ttf") format("truetype");
 
   font-weight: 200;
   font-style: normal;
@@ -47,8 +52,9 @@
 @font-face {
   font-family: "Kanit";
   src: url("./kanit/Kanit-ExtraLightItalic.ttf");
-  src: local("Kanit"),
-       url("./kanit/Kanit-ExtraLightItalic.ttf") format("truetype");
+  src:
+    local("Kanit"),
+    url("./kanit/Kanit-ExtraLightItalic.ttf") format("truetype");
 
   font-weight: 200;
   font-style: italic;
@@ -56,8 +62,9 @@
 @font-face {
   font-family: "Kanit";
   src: url("./kanit/Kanit-Light.ttf");
-  src: local("Kanit"),
-       url("./kanit/Kanit-Light.ttf") format("truetype");
+  src:
+    local("Kanit"),
+    url("./kanit/Kanit-Light.ttf") format("truetype");
 
   font-weight: 300;
   font-style: normal;
@@ -65,8 +72,9 @@
 @font-face {
   font-family: "Kanit";
   src: url("./kanit/Kanit-LightItalic.ttf");
-  src: local("Kanit"),
-       url("./kanit/Kanit-LightItalic.ttf") format("truetype");
+  src:
+    local("Kanit"),
+    url("./kanit/Kanit-LightItalic.ttf") format("truetype");
 
   font-weight: 300;
   font-style: italic;
@@ -74,8 +82,9 @@
 @font-face {
   font-family: "Kanit";
   src: url("./kanit/Kanit-Regular.ttf");
-  src: local("Kanit"),
-       url("./kanit/Kanit-Regular.ttf") format("truetype");
+  src:
+    local("Kanit"),
+    url("./kanit/Kanit-Regular.ttf") format("truetype");
 
   font-weight: 400;
   font-style: normal;
@@ -83,8 +92,9 @@
 @font-face {
   font-family: "Kanit";
   src: url("./kanit/Kanit-Italic.ttf");
-  src: local("Kanit"),
-       url("./kanit/Kanit-Italic.ttf") format("truetype");
+  src:
+    local("Kanit"),
+    url("./kanit/Kanit-Italic.ttf") format("truetype");
 
   font-weight: 400;
   font-style: italic;
@@ -92,8 +102,9 @@
 @font-face {
   font-family: "Kanit";
   src: url("./kanit/Kanit-Medium.ttf");
-  src: local("Kanit"),
-       url("./kanit/Kanit-Medium.ttf") format("truetype");
+  src:
+    local("Kanit"),
+    url("./kanit/Kanit-Medium.ttf") format("truetype");
 
   font-weight: 500;
   font-style: normal;
@@ -101,8 +112,9 @@
 @font-face {
   font-family: "Kanit";
   src: url("./kanit/Kanit-MediumItalic.ttf");
-  src: local("Kanit"),
-       url("./kanit/Kanit-MediumItalic.ttf") format("truetype");
+  src:
+    local("Kanit"),
+    url("./kanit/Kanit-MediumItalic.ttf") format("truetype");
 
   font-weight: 500;
   font-style: italic;
@@ -110,8 +122,9 @@
 @font-face {
   font-family: "Kanit";
   src: url("./kanit/Kanit-SemiBold.ttf");
-  src: local("Kanit"),
-       url("./kanit/Kanit-SemiBold.ttf") format("truetype");
+  src:
+    local("Kanit"),
+    url("./kanit/Kanit-SemiBold.ttf") format("truetype");
 
   font-weight: 600;
   font-style: normal;
@@ -119,8 +132,9 @@
 @font-face {
   font-family: "Kanit";
   src: url("./kanit/Kanit-SemiBoldItalic.ttf");
-  src: local("Kanit"),
-       url("./kanit/Kanit-SemiBoldItalic.ttf") format("truetype");
+  src:
+    local("Kanit"),
+    url("./kanit/Kanit-SemiBoldItalic.ttf") format("truetype");
 
   font-weight: 600;
   font-style: italic;
@@ -128,8 +142,9 @@
 @font-face {
   font-family: "Kanit";
   src: url("./kanit/Kanit-Bold.ttf");
-  src: local("Kanit"),
-       url("./kanit/Kanit-Bold.ttf") format("truetype");
+  src:
+    local("Kanit"),
+    url("./kanit/Kanit-Bold.ttf") format("truetype");
 
   font-weight: 700;
   font-style: normal;
@@ -137,8 +152,9 @@
 @font-face {
   font-family: "Kanit";
   src: url("./kanit/Kanit-BoldItalic.ttf");
-  src: local("Kanit"),
-       url("./kanit/Kanit-BoldItalic.ttf") format("truetype");
+  src:
+    local("Kanit"),
+    url("./kanit/Kanit-BoldItalic.ttf") format("truetype");
 
   font-weight: 700;
   font-style: italic;
@@ -146,8 +162,9 @@
 @font-face {
   font-family: "Kanit";
   src: url("./kanit/Kanit-ExtraBold.ttf");
-  src: local("Kanit"),
-       url("./kanit/Kanit-ExtraBold.ttf") format("truetype");
+  src:
+    local("Kanit"),
+    url("./kanit/Kanit-ExtraBold.ttf") format("truetype");
 
   font-weight: 800;
   font-style: normal;
@@ -155,8 +172,9 @@
 @font-face {
   font-family: "Kanit";
   src: url("./kanit/Kanit-ExtraBoldItalic.ttf");
-  src: local("Kanit"),
-       url("./kanit/Kanit-ExtraBoldItalic.ttf") format("truetype");
+  src:
+    local("Kanit"),
+    url("./kanit/Kanit-ExtraBoldItalic.ttf") format("truetype");
 
   font-weight: 800;
   font-style: italic;
@@ -164,8 +182,9 @@
 @font-face {
   font-family: "Kanit";
   src: url("./kanit/Kanit-Black.ttf");
-  src: local("Kanit"),
-       url("./kanit/Kanit-Black.ttf") format("truetype");
+  src:
+    local("Kanit"),
+    url("./kanit/Kanit-Black.ttf") format("truetype");
 
   font-weight: 900;
   font-style: normal;
@@ -173,8 +192,9 @@
 @font-face {
   font-family: "Kanit";
   src: url("./kanit/Kanit-BlackItalic.ttf");
-  src: local("Kanit"),
-       url("./kanit/Kanit-BlackItalic.ttf") format("truetype");
+  src:
+    local("Kanit"),
+    url("./kanit/Kanit-BlackItalic.ttf") format("truetype");
 
   font-weight: 900;
   font-style: italic;
@@ -184,46 +204,52 @@
 @font-face {
   font-family: "Overpass Mono", "Overpass Mono Fallback";
   src: url("./overpass-mono/OverpassMono-VariableFont_wght.ttf");
-  src: local("Overpass Mono"),
-       url("./overpass-mono/OverpassMono-VariableFont_wght.ttf") format("truetype");
+  src:
+    local("Overpass Mono"),
+    url("./overpass-mono/OverpassMono-VariableFont_wght.ttf") format("truetype");
 }
 @font-face {
   font-family: "Overpass Mono Fallback";
   src: url("./overpass-mono/static/OverpassMono-Light.ttf");
-  src: local("Overpass Mono"),
-       url("./overpass-mono/static/OverpassMono-Light.ttf") format("truetype");
+  src:
+    local("Overpass Mono"),
+    url("./overpass-mono/static/OverpassMono-Light.ttf") format("truetype");
 
   font-weight: 300;
 }
 @font-face {
   font-family: "Overpass Mono Fallback";
   src: url("./overpass-mono/static/OverpassMono-Regular.ttf");
-  src: local("Overpass Mono"),
-       url("./overpass-mono/static/OverpassMono-Regular.ttf") format("truetype");
+  src:
+    local("Overpass Mono"),
+    url("./overpass-mono/static/OverpassMono-Regular.ttf") format("truetype");
 
   font-weight: 400;
 }
 @font-face {
   font-family: "Overpass Mono Fallback";
   src: url("./overpass-mono/static/OverpassMono-Medium.ttf");
-  src: local("Overpass Mono"),
-       url("./overpass-mono/static/OverpassMono-Medium.ttf") format("truetype");
+  src:
+    local("Overpass Mono"),
+    url("./overpass-mono/static/OverpassMono-Medium.ttf") format("truetype");
 
   font-weight: 500;
 }
 @font-face {
   font-family: "Overpass Mono Fallback";
   src: url("./overpass-mono/static/OverpassMono-SemiBold.ttf");
-  src: local("Overpass Mono"),
-       url("./overpass-mono/static/OverpassMono-SemiBold.ttf") format("truetype");
+  src:
+    local("Overpass Mono"),
+    url("./overpass-mono/static/OverpassMono-SemiBold.ttf") format("truetype");
 
   font-weight: 600;
 }
 @font-face {
   font-family: "Overpass Mono Fallback";
   src: url("./overpass-mono/static/OverpassMono-Bold.ttf");
-  src: local("Overpass Mono"),
-       url("./overpass-mono/static/OverpassMono-Bold.ttf") format("truetype");
+  src:
+    local("Overpass Mono"),
+    url("./overpass-mono/static/OverpassMono-Bold.ttf") format("truetype");
 
   font-weight: 700;
 }
