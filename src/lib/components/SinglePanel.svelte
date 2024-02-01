@@ -5,7 +5,7 @@
 </script>
 
 <div class="wrapper">
-  <Saos animation="single-panel-from-left cubic-bezier(0.35, 0.5, 0.65, 0.95) 2s ">
+  <Saos animation="single-panel-from-left 2s cubic-bezier(0.35, 0.5, 0.65, 0.95)" once={true}>
     <div class="text">
       <h1>
         A single solar panel can<br />generate <span class="c2">30¢</span>
@@ -16,7 +16,7 @@
   </Saos>
   <div class="panel">
     <div class="panel-content">
-      <Saos animation="single-panel-from-right 2s cubic-bezier(0.35, 0.5, 0.65, 0.95) both">
+      <Saos animation="single-panel-from-right 2s cubic-bezier(0.35, 0.5, 0.65, 0.95)" once={true}>
         <Walkway id="panelSingle">{@html panelArt}</Walkway>
       </Saos>
     </div>
@@ -41,7 +41,6 @@
         transform: translate(-15%, 17.5%);
       }
     }
-    margin-bottom: 100vh;
   }
 
   @keyframes -global-single-panel-from-right {

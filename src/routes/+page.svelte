@@ -4,5 +4,5 @@
   import Saos from "saos"
 </script>
 
-<Saos><Banner /></Saos>
+<Saos once={true}><Banner /></Saos>
 <SinglePanel />
