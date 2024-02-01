@@ -16,7 +16,5 @@
   #contents {
     max-width: 1200px;
     margin: auto;
-    margin-top: 50px;
-    // outline: #ff000099 dashed 1px;
   }
 </style>
