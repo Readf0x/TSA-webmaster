@@ -1,28 +1,23 @@
 <script lang="ts">
-  import windmill from "$lib/svg/windmill.svg?raw";
-  import walkway from "walkway.js/walkway.min?raw";
-  import { onMount } from "svelte";
+  import windmill from "$lib/svg/windmill.svg?raw"
+  import { onMount } from "svelte"
 
-  onMount(async () => {
+  onMount(() => {
+    let svgStroke = document.getElementById("stroke")
+    let svgBackground = document.getElementById("background")
     // @ts-ignore
     var svg = new Walkway({
       selector: "#windmill",
       duration: 5000,
       easing: "easeInQuart",
-    });
-    let svgStroke = document.getElementById("stroke");
-    svgStroke?.setAttribute("stroke", "#fff6e0");
-    svg.draw();
+    })
+    svgStroke?.setAttribute("stroke", "#fff6e0")
+    svg.draw()
     setTimeout(() => {
-      let svgBackground = document.getElementById("background");
-      if (svgBackground) svgBackground.style.fill = "#01322a";
-    }, 2500);
-  });
+      if (svgBackground) svgBackground.style.fill = "#01322a"
+    }, 2500)
+  })
 </script>
-
-<svelte:head>
-  {@html `<script>${walkway}</script>`}
-</svelte:head>
 
 <div class="wrapper">
   <div class="windmill">{@html windmill}</div>
