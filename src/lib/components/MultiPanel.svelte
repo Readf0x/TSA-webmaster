@@ -26,7 +26,8 @@
 </div>
 <div class="spacer" style:height="{spacer || 301.95}px" />
 
-<h1>That’s enough to power your home <span class="c1 si">for free.</span></h1>
+<!-- It's a bottom, just like me! -->
+<h1 class="bottom">That’s enough to power your home <span class="c1 si">for free.</span></h1>
 <p class="f1 asterisk">* depending on your power usage</p>
 
 <style lang="scss">
@@ -34,7 +35,10 @@
   h1 {
     &.beeg {
       font-size: 4em;
-      margin: -0.4em 0 0.5em;
+      margin: -0.4em 0 0.25em;
+    }
+    &.bottom {
+      margin-top: 0.75em;
     }
   }
   p {
