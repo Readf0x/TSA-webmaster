@@ -5,10 +5,14 @@
   let length: number = 5
   let spacer: number
 
-  onMount(() => {
-    length = Math.round(document.documentElement.clientWidth / ( 713.19 - 50 )) + 1
-  })
+  function calcLength(): void {
+    length = Math.round(document.documentElement.clientWidth / ( 713.19 - 50 )) + 2
+  }
+
+  onMount(() => { calcLength() })
 </script>
+
+<svelte:window on:resize={ () => calcLength() }/>
 
 <h1>The average 15 panel array can generate up to <span class="c2">30kWh</span></h1>
 <h1 class="beeg c2">Every day.</h1>
