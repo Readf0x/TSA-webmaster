@@ -5,7 +5,7 @@
 
 <div class="wrapper">
   <h1>
-    Switching doesn’t just help save your wallet<br>
+    Switching doesn’t just help save your wallet<br />
     <i class="c2">It helps save the planet too.</i>
   </h1>
   <div class="art">

@@ -6,21 +6,23 @@
   let spacer: number
 
   function calcLength(): void {
-    length = Math.round(document.documentElement.clientWidth / ( 713.19 - 50 )) + 2
+    length = Math.round(document.documentElement.clientWidth / (713.19 - 50)) + 2
   }
 
-  onMount(() => { calcLength() })
+  onMount(() => {
+    calcLength()
+  })
 </script>
 
-<svelte:window on:resize={ () => calcLength() }/>
+<svelte:window on:resize={() => calcLength()} />
 
 <h1>The average 15 panel array can generate up to <span class="c2">30kWh</span></h1>
 <h1 class="beeg c2">Every day.</h1>
 
 <div class="panels" bind:clientHeight={spacer}>
   <div class="panels-contents">
-    {#each {length: length} as _}
-    <div class="panel">{@html panel}</div>
+    {#each { length: length } as _}
+      <div class="panel">{@html panel}</div>
     {/each}
   </div>
 </div>
@@ -31,7 +33,10 @@
 <p class="f1 asterisk">* depending on your power usage</p>
 
 <style lang="scss">
-  h1, p { text-align: center; }
+  h1,
+  p {
+    text-align: center;
+  }
   h1 {
     &.beeg {
       font-size: 4em;
@@ -61,7 +66,9 @@
       animation: slide 3s infinite linear;
       .panel {
         min-width: 713.19px;
-        &:nth-child(n+2) { margin-left: -50px; }
+        &:nth-child(n + 2) {
+          margin-left: -50px;
+        }
       }
     }
   }

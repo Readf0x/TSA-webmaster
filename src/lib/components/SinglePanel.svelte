@@ -16,7 +16,10 @@
   </Saos>
   <div class="panel">
     <div class="panel-content">
-      <Saos animation="single-panel-from-right 1.75s cubic-bezier(0.35, 0.5, 0.65, 0.95)" once={true}>
+      <Saos
+        animation="single-panel-from-right 1.75s cubic-bezier(0.35, 0.5, 0.65, 0.95)"
+        once={true}
+      >
         <Walkway id="panelSingle">{@html panelArt}</Walkway>
       </Saos>
     </div>
