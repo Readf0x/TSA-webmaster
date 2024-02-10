@@ -17,7 +17,7 @@
 <style lang="scss">
   .wrapper {
     margin-top: 150px;
-    margin-bottom: 725px;
+    margin-bottom: 50vw;
     h1 {
       text-align: center;
     }
@@ -27,13 +27,34 @@
       left: 0;
       right: 0;
       display: flex;
+      align-items: end;
       .guy {
         right: 0;
+        width: 50vw;
+        max-width: 350px;
+        opacity: 0;
+        animation: fade-in 0.5s linear 1s 1 forwards;
       }
       .factory {
         margin-left: 5%;
-        margin-top: 5%;
+        margin-bottom: 10vw;
+        width: 75vw;
+        max-width: 800px;
+        opacity: 0;
+        animation: fade-in 0.5s linear 1s 1 forwards;
+        @media (max-aspect-ratio: 3/4) {
+          margin-bottom: calc( 10vw + 5vw );
+        }
       }
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 </style>

@@ -41,6 +41,9 @@
     &.beeg {
       font-size: 4em;
       margin: -0.4em 0 0.25em;
+      @media (max-aspect-ratio: 3/4) {
+        font-size: 2em;
+      }
     }
     &.bottom {
       margin-top: 0.75em;

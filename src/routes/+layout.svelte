@@ -15,6 +15,8 @@
 <style lang="scss">
   #contents {
     max-width: 1200px;
+    padding: 0 20px;
     margin: auto;
+    // overflow-x: hidden;
   }
 </style>

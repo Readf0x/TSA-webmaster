@@ -7,6 +7,6 @@
 </script>
 
 <Saos once={true}><Banner /></Saos>
-<SinglePanel />
+<Saos once={true}><SinglePanel /></Saos>
 <MultiPanel />
-<Guy />
+<Saos once={true}><Guy /></Saos>
