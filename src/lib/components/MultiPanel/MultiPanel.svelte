@@ -1,5 +1,5 @@
 <script lang="ts">
-  import panel from "$lib/svg/panel-multi.svg?raw"
+  import panel from "./panel-multi.svg?raw"
   import { onMount } from "svelte"
 
   let length: number = 5

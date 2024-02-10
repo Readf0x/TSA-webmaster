@@ -1,5 +1,5 @@
 <script lang="ts">
-  import windmill from "$lib/svg/windmill.svg?raw"
+  import windmill from "./windmill.svg?raw"
   import { onMount } from "svelte"
 
   onMount(() => {

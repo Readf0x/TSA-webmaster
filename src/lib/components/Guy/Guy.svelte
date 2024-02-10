@@ -1,6 +1,6 @@
 <script lang="ts">
-  import guy from "$lib/svg/guy.svg?raw"
-  import factory from "$lib/svg/factory.svg?raw"
+  import guy from "./guy.svg?raw"
+  import factory from "./factory.svg?raw"
 </script>
 
 <div class="wrapper">

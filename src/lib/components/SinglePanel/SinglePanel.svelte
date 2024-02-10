@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Walkway from "./Walkway.svelte"
-  import panelArt from "$lib/svg/panel-single.svg?raw"
+  import Walkway from "../Walkway.svelte"
+  import panelArt from "./panel-single.svg?raw"
 </script>
 
 <div class="wrapper">
