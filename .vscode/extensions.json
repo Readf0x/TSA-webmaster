@@ -4,6 +4,7 @@
     "aaron-bond.better-comments",
     "ms-vscode.vscode-typescript-next",
     "svelte.svelte-vscode",
-    "github.vscode-pull-request-github"
+    "github.vscode-pull-request-github",
+    "antfu.browse-lite"
   ]
 }
