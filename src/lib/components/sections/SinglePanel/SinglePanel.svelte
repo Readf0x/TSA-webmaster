@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Walkway from "../Walkway.svelte"
+  import Walkway from "../../Walkway.svelte"
   import panelArt from "./panel-single.svg?raw"
 </script>
 
