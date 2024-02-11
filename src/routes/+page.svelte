@@ -8,5 +8,5 @@
 
 <Saos once={true}><Banner /></Saos>
 <Saos once={true}><SinglePanel /></Saos>
-<MultiPanel />
+<Saos once={true}><MultiPanel /></Saos>
 <Saos once={true}><Guy /></Saos>

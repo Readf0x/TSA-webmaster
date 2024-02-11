@@ -2,7 +2,7 @@
 
 $color-scheme: (
   "background": #021205,
-  "background-alt": #1e1d02,
+  "background-alt": #010702,
   "text": #fff6e0,
   "primary": #a9eac4,
   "secondary": #01322a,
@@ -23,6 +23,29 @@ $fallback-font:
   "Helvetica Neue",
   sans-serif;
 
+::-webkit-scrollbar {
+  background: var(--background-alt);
+  width: 12px;
+  // &-button {
+  //   background: var(--background-alt);
+  // }
+  // &-corner
+  &-thumb {
+    background: var(--secondary);
+    /* [1 Million pixels!](https://www.youtube.com/watch?v=EJR1H5tf5wE) */
+    /* sadly I had to turn it off :(
+     * they will never know the joy of 1 million pixel border radius */
+    // border-radius: 1000000px;
+    &:hover {
+      background: #03463b;
+    }
+    &:active {
+      background: #012721;
+    }
+  }
+  // &-track
+  // &-track-piece
+}
 :root {
   font-family: "Kanit";
 

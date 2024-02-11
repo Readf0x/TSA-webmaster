@@ -36,6 +36,9 @@
   h1,
   p {
     text-align: center;
+    translate: 0 15px;
+    opacity: 0;
+    animation: fade-bottom 0.5s 1s 1 forwards;
   }
   h1 {
     &.beeg {
@@ -44,15 +47,18 @@
       @media (max-aspect-ratio: 3/4) {
         font-size: 2em;
       }
+      animation: fade-bottom 0.5s 1.5s 1 forwards;
     }
     &.bottom {
       margin-top: 0.75em;
+      animation: fade-bottom 0.5s 3s 1 forwards;
     }
   }
   p {
     &.asterisk {
       margin-top: -0.25em;
       font-size: 0.75em;
+      animation: fade-bottom 0.5s 3s 1 forwards;
     }
   }
 
@@ -76,6 +82,16 @@
     }
   }
 
+  @keyframes fade-bottom {
+    0% {
+      translate: 0 15px;
+      opacity: 0;
+    }
+    100% {
+      translate: 0;
+      opacity: 1;
+    }
+  }
   @keyframes slide {
     0% {
       translate: 331.595px;
