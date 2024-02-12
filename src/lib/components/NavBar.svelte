@@ -3,7 +3,7 @@
   // import MaterialGirl from "./MaterialGirl.svelte"
 </script>
 
-<nav platform="desktop">
+<nav data-platform="desktop">
   <a href="/">Home</a>
   <a href="/sources">Sources</a>
 </nav>
@@ -13,7 +13,7 @@
 
 <style lang="scss">
   @media (max-aspect-ratio: 3/4) {
-    nav[platform=desktop] {
+    nav[data-platform=desktop] {
       display: none;
     }
   }

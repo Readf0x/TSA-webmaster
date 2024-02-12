@@ -2,7 +2,7 @@
   //@ts-nocheck
   // import { onMount } from "svelte"
 
-  function createRipple(event) {
+  function createRippleOld(event) {
     const button = event.currentTarget;
 
     const circle = document.createElement("span");
@@ -18,24 +18,33 @@
 
     const ripple = button.getElementsByClassName("ripple")[0];
 
-    if (ripple) {
-      ripple.remove();
-    }
+    // if (ripple) {
+    //   ripple.remove();
+    // }
 
     button.appendChild(circle);
   }
 
-  // height: 265px; width: 265px; left: -26.5px; top: -98.5px;
   type Ripple = {
-    radius: number,
+    diameter: number,
     pos: [number, number]
   }
-
-  let ripples: Ripple[] = [
-    { radius: 132.5, pos: [196, 83] },
-    { radius: 132.5, pos: [74, 42] },
-    { radius: 132.5, pos: [6, 1] },
-  ]
+  let ripples: Ripple[] = new Array
+  function createRipple(ev: MouseEvent): void {
+    const button: HTMLButtonElement = ev.currentTarget
+    ripples.push({
+      diameter: Math.max(button.clientWidth, button.clientHeight),
+      pos: [
+        ev.clientX - button.offsetLeft,
+        ev.clientY - button.offsetTop,
+      ],
+    })
+    ripples = ripples
+    setTimeout(() => {
+      ripples.pop()
+      ripples = ripples
+    }, 1000)
+  }
 
   // onMount(() => {
   //   const buttons = document.getElementsByTagName("button");
@@ -47,14 +56,19 @@
 
 <button on:click={createRipple}>
   Find out more
+  <span />
   {#each ripples as ripple}
-    <span class="ripple" />
+    <span
+      class="ripple"
+      style:height="{ripple.diameter}px"
+      style:width="{ripple.diameter}px"
+      style:left="{ripple.pos[0] - (ripple.diameter/2)}px"
+      style:top="{ripple.pos[1] - (ripple.diameter/2)}px"
+    />
   {/each}
 </button>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
   button {
     position: relative;
     overflow: hidden;
