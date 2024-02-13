@@ -68,6 +68,13 @@ body {
 body {
   overflow-x: hidden;
   position: relative;
+  #page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 50px;
+    gap: 50px
+  }
 }
 
 // Bootstrap style class modifiers

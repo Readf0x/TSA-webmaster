@@ -5,6 +5,8 @@
   import Saos from "saos"
 </script>
 
-<Saos once={true}><SinglePanel /></Saos>
-<Saos once={true}><MultiPanel /></Saos>
-<Saos once={true}><Guy /></Saos>
+<div id="page">
+  <Saos once={true}><SinglePanel /></Saos>
+  <Saos once={true}><MultiPanel /></Saos>
+  <Saos once={true}><Guy /></Saos>
+</div>
