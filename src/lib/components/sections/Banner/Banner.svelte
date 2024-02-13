@@ -35,7 +35,7 @@
 <style lang="scss">
   .windmill {
     width: 1000px;
-    max-width: 90vw;
+    max-width: 100vw;
     margin-right: 50px;
     @media (max-aspect-ratio: 3/4) {
       margin-right: 15px;
@@ -44,7 +44,7 @@
 
   .wrapper {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     max-height: 1000px;
     display: flex;
     flex-direction: column;
