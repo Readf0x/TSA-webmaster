@@ -43,7 +43,7 @@
         opacity: 0;
         animation: fade-in 0.5s linear 1s 1 forwards;
         @media (max-aspect-ratio: 3/4) {
-          margin-bottom: calc( 10vw + 5vw );
+          margin-bottom: calc(10vw + 5vw);
         }
       }
     }

@@ -16,7 +16,7 @@
 
 <style lang="scss">
   @media (max-aspect-ratio: 3/4) {
-    nav[data-platform=desktop] {
+    nav[data-platform="desktop"] {
       display: none;
     }
   }
@@ -39,7 +39,7 @@
       /* *** DEV OUTLINE *** */
       // outline: 1px dashed #f339;
       &:hover {
-        background-color: #ffffff07
+        background-color: #ffffff07;
       }
     }
   }

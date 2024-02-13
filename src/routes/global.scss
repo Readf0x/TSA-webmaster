@@ -52,7 +52,7 @@ $fallback-font:
   @each $name, $color in $color-scheme {
     --#{$name}: #{$color};
   }
-  
+
   --sans: "Kanit", "Ubuntu", $fallback-font;
   --mono: "Overpass Mono", "Overpass Mono Fallback";
   --disp: "DM Serif Display";
