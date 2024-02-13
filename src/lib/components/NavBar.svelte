@@ -1,15 +1,15 @@
 <script lang="ts">
   import { page } from "$app/stores"
-  import MaterialGirl from "./MaterialGirl.svelte"
+  import L from "./MaterialGirl.svelte"
 </script>
 
 <nav data-platform="desktop">
-  <MaterialGirl>
-    <a href="/">Home</a>
-  </MaterialGirl>
-  <MaterialGirl>
-    <a href="/sources">Sources</a>
-  </MaterialGirl>
+  <L><a href="/">Home</a></L>
+  <L><a href="/solar">Solar</a></L>
+  <L><a href="/wind">Wind</a></L>
+  <L><a href="/thermal">Thermal</a></L>
+  <L><a href="/hydro">Hydro</a></L>
+  <L><a href="/sources">Sources</a></L>
 </nav>
 
 <!-- TODO: add material design 2 style active borders -->
