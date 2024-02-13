@@ -28,7 +28,7 @@
     left: 0;
     right: 0;
     z-index: 99;
-    background-color: #021205;
+    background-color: var(--background);
     /* *** DEV OUTLINE *** */
     // outline: 1px dashed #75f9;
     a {
