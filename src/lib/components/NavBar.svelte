@@ -23,6 +23,12 @@
 
   nav {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #021205;
     /* *** DEV OUTLINE *** */
     // outline: 1px dashed #75f9;
     a {
