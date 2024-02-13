@@ -52,6 +52,10 @@ $fallback-font:
   @each $name, $color in $color-scheme {
     --#{$name}: #{$color};
   }
+  
+  --sans: "Kanit", "Ubuntu", $fallback-font;
+  --mono: "Overpass Mono", "Overpass Mono Fallback";
+  --disp: "DM Serif Display";
 }
 
 html,
@@ -92,13 +96,13 @@ body {
 }
 
 .f0 {
-  font-family: "Kanit", "Ubuntu", $fallback-font;
+  font-family: var(--sans);
 }
 .f1 {
-  font-family: "Overpass Mono", "Overpass Mono Fallback";
+  font-family: var(--mono);
 }
 .f2 {
-  font-family: "DM Serif Display";
+  font-family: var(--disp);
 }
 
 // Default per-tag styles

@@ -1,13 +1,16 @@
 <script lang="ts">
   import { page } from "$app/stores"
-  // import MaterialGirl from "./MaterialGirl.svelte"
+  import MaterialGirl from "./MaterialGirl.svelte"
 </script>
 
 <nav data-platform="desktop">
-  <a href="/">Home</a>
-  <a href="/sources">Sources</a>
+  <MaterialGirl>
+    <a href="/">Home</a>
+  </MaterialGirl>
+  <MaterialGirl>
+    <a href="/sources">Sources</a>
+  </MaterialGirl>
 </nav>
-<!-- <MaterialGirl /> -->
 
 <!-- TODO: add material design 2 style active borders -->
 
@@ -23,10 +26,9 @@
     /* *** DEV OUTLINE *** */
     // outline: 1px dashed #75f9;
     a {
-      font-style: "DM Serif Display";
+      font-style: var(--disp);
       color: var(--text);
       text-decoration: none;
-      padding: 0.25em 0.5em;
       position: relative;
       /* *** DEV OUTLINE *** */
       // outline: 1px dashed #f339;

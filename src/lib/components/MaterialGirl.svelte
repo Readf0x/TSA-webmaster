@@ -27,9 +27,11 @@
 
   type Ripple = {
     diameter: number,
-    pos: [number, number]
+    pos: [number, number],
+    id: number
   }
   let ripples: Ripple[] = new Array
+  let id = 0
   function createRipple(ev: MouseEvent): void {
     const button: HTMLButtonElement = ev.currentTarget
     ripples.push({
@@ -38,10 +40,12 @@
         ev.clientX - button.offsetLeft,
         ev.clientY - button.offsetTop,
       ],
+      id,
     })
+    id += 1
     ripples = ripples
     setTimeout(() => {
-      ripples.pop()
+      ripples.shift()
       ripples = ripples
     }, 1000)
   }
@@ -55,15 +59,16 @@
 </script>
 
 <button on:click={createRipple}>
-  Find out more
-  <span />
-  {#each ripples as ripple}
+  <slot>
+    Material girl in a material world
+  </slot>
+  {#each ripples as { diameter, pos, id }, _ (id)}
     <span
       class="ripple"
-      style:height="{ripple.diameter}px"
-      style:width="{ripple.diameter}px"
-      style:left="{ripple.pos[0] - (ripple.diameter/2)}px"
-      style:top="{ripple.pos[1] - (ripple.diameter/2)}px"
+      style:height="{diameter}px"
+      style:width="{diameter}px"
+      style:left="{pos[0] - (diameter/2)}px"
+      style:top="{pos[1] - (diameter/2)}px"
     />
   {/each}
 </button>
@@ -71,18 +76,13 @@
 <style>
   button {
     position: relative;
-    overflow: hidden;
-    transition: background 400ms;
-    color: #fff;
-    background-color: #6200ee;
-    padding: 1rem 2rem;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
+    overflow: visible;
     outline: 0;
     border: 0;
-    border-radius: 0.25rem;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3); /* black with 30% opacity */
     cursor: pointer;
+    background: none;
+    font: inherit;
+    padding: 0.25em 0.5em;
   }
 
   :global(span.ripple) {
@@ -90,7 +90,7 @@
     border-radius: 50%;
     transform: scale(0);
     animation: ripple 600ms linear;
-    background: radial-gradient(transparent, #fff5, transparent, #fff5, transparent, #fff5);
+    background: radial-gradient(transparent, var(--accent), transparent, var(--accent), transparent, var(--accent));
   }
 
   @keyframes ripple {
