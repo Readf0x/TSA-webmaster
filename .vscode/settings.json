@@ -1,3 +1,5 @@
 {
-  "browse-lite.startUrl": "http://localhost:5173"
+  "browse-lite.startUrl": "http://localhost:5173",
+  "editor.tabSize": 2,
+  "editor.useTabStops": false
 }
