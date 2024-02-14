@@ -11,14 +11,9 @@
     </h1>
     <h1>That’s <span class="si">more than</span> <span class="c2">$100</span> annually.</h1>
   </div>
-  <!-- <Saos animation="single-panel-from-left 1.75s cubic-bezier(0.35, 0.5, 0.65, 0.95)" once={true}> -->
   <div class="panel">
     <div class="panel-content">
       <Walkway id="panelSingle">{@html panelArt}</Walkway>
-      <!-- <Saos
-        animation="single-panel-from-right 1.75s cubic-bezier(0.35, 0.5, 0.65, 0.95)"
-        once={true}
-      > -->
     </div>
   </div>
 </div>
@@ -27,7 +22,7 @@
   .wrapper {
     display: flex;
     margin-top: 20px;
-    margin-bottom: 180px;
+    // margin-bottom: 180px;
     @media (max-width: 800px) {
       flex-direction: column;
     }
