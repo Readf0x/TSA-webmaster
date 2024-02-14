@@ -4,13 +4,12 @@
 </script>
 
 <!-- another windmill image kinda like the one on the home page could work -->
-<h1>Thermal energy can save you <span class="c2">such and such amount of money</span> however many times</h1>
 
-<h1>Basic Structure 1</h1>
-<p>Filler text about wind-generated power</p>
+<h1>The Most Popular Clean Energy in the U.S.</h1>
+<p>There are <span class="c2">some # of farms</span> wind farms across the U.S.</p>
 
-<h1>Basic Structure 2</h1>
-<p><i>More</i> text about wind-generated power</p>
+<h1>Generative Power</h1>
+<p>They generate <span class="c2">X kWh per some period of time</span></p>
 
 <h2>Etc.</h2>
 

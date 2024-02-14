@@ -5,11 +5,13 @@
 
 <!-- I was looking at pictures for this, but they all seem to complicated -->
 
-<h1>Basic Structure 1</h1>
-<p>Filler text about thermal power</p>
+<!-- <h1>Thermal energy can save you <span class="c2">such and such amount of money</span> however many times</h1> -->
 
-<h1>Basic Structure 2</h1>
-<p><i>More</i> text about thermal power</p>
+<h2>Impact</h2>
+<p>Using geothermal power reduces each persons carbon footprint <span class="c2">%X</span> on average.</p>
+
+<h2>Cheaper</h2>
+<p>Cities that implemented geothermal power reduced power bills by about <span class="c2">$X</span> per person!</p>
 
 <h2>Etc.</h2>
 
