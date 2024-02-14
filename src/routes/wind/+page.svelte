@@ -1,6 +1,6 @@
 <!-- TODO: Add this -->
 <script>
-    /* just adding structure so this is readable */
+  /* just adding structure so this is readable */
 </script>
 
 <!-- another windmill image kinda like the one on the home page could work -->
@@ -14,5 +14,5 @@
 <h2>Etc.</h2>
 
 <style lang="scss">
-    /* just adding structure so this is readable */
+  /* just adding structure so this is readable */
 </style>
