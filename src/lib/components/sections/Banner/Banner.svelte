@@ -40,16 +40,22 @@
     @media (max-aspect-ratio: 3/4) {
       margin-right: 15px;
     }
+    @media (max-width: 1200px) {
+      max-width: 90vw;
+    }
   }
 
   .wrapper {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     max-height: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media (max-aspect-ratio: 3/4) {
+      height: max-content;
+    }
     .bottom {
       display: flex;
       flex-direction: row;

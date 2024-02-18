@@ -64,16 +64,41 @@ body {
   color: var(--text);
   font-size: 1.25em;
   margin: 0;
-}
-body {
+  //! MUY IMPORTANTE
+  // Stops overflow content from breaking shit
   overflow-x: hidden;
   position: relative;
-  #page {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-top: 50px;
-    gap: 50px;
+}
+#page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 50px;
+  gap: 50px;
+  .quote {
+    .wrap-around {
+      shape-outside: margin-box;
+      width: 60%;
+      max-width: 500px;
+      float: left;
+      &.right { float: right; }
+      font-size: 1.25em;
+      color: var(--accent);
+      text-align: center;
+      margin: 0 1em;
+      @media (max-aspect-ratio: 3/4) {
+        float: unset;
+        max-width: unset;
+        width: unset;
+        margin-bottom: 0.5em;
+      }
+    }
+    p { margin: 0; }
+    @media (min-aspect-ratio: 3/4) {
+      border: 2px solid var(--text);
+      padding: 10px;
+      background-color: var(--secondary);
+    }
   }
 }
 
@@ -126,6 +151,10 @@ h6 {
 p {
   font-size: 24px;
 }
+a {
+  color: var(--panel-blue);
+  font-style: italic;
+}
 @media (max-aspect-ratio: 3/4) {
   h1,
   h2,
@@ -133,6 +162,6 @@ p {
   h4,
   h5,
   h6 {
-    font-size: 1.2em;
+    font-size: 10vw;
   }
 }

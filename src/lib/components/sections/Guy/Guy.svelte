@@ -16,7 +16,6 @@
 
 <style lang="scss">
   .wrapper {
-    margin-top: 150px;
     margin-bottom: 50vw;
     h1 {
       text-align: center;

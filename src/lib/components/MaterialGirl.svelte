@@ -60,39 +60,34 @@
   {#each ripples as { diameter, pos, id }, _ (id)}
     <span
       class="ripple"
-      style:height="{diameter}px"
-      style:width="{diameter}px"
-      style:left="{pos[0] - diameter / 2}px"
-      style:top="{pos[1] - diameter / 2}px"
+      style:height="{diameter / 2}px"
+      style:width="{diameter / 2}px"
+      style:left="{pos[0] - diameter / 4}px"
+      style:top="{pos[1] - diameter / 4}px"
     />
   {/each}
 </button>
 
-<style>
+<style lang="scss">
   button {
     position: relative;
     overflow: visible;
     outline: 0;
     border: 0;
+    padding: 0;
     cursor: pointer;
     background: none;
     font: inherit;
-    padding: 0.25em 0.5em;
-  }
-
-  :global(span.ripple) {
-    position: absolute;
-    border-radius: 50%;
-    transform: scale(0);
-    animation: ripple 600ms linear;
-    background: radial-gradient(
-      transparent,
-      var(--accent),
-      transparent,
-      var(--accent),
-      transparent,
-      var(--accent)
-    );
+    box-sizing: border-box;
+    display: contents;
+    :global(span.ripple) {
+      position: absolute;
+      border-radius: 50%;
+      transform: scale(0);
+      animation: ripple 600ms linear;
+      background: radial-gradient(var(--accent), transparent);
+      opacity: 0.25;
+    }
   }
 
   @keyframes ripple {

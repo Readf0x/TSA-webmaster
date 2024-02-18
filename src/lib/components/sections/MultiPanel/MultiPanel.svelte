@@ -6,7 +6,10 @@
   let spacer: number
 
   function calcLength(): void {
-    length = Math.round(document.documentElement.clientWidth / (713.19 - 50)) + 2
+    const dw = document.documentElement.clientWidth
+    const pw = 713.19
+    if(dw <= pw * 3) length = Math.round(dw / (pw - 50)) + 2
+    else length = 3
   }
 
   onMount(() => {
@@ -42,12 +45,12 @@
   }
   h1 {
     &.beeg {
-      font-size: 4em;
+      font-size: 4rem;
       margin: -0.4em 0 0.25em;
-      @media (max-aspect-ratio: 3/4) {
-        font-size: 2em;
-      }
       animation: fade-bottom 0.5s 1.5s 1 forwards;
+      @media (max-aspect-ratio: 3/4) {
+        font-size: 15vw;
+      }
     }
     &.bottom {
       margin-top: 0.75em;
@@ -57,7 +60,7 @@
   p {
     &.asterisk {
       margin-top: -0.25em;
-      font-size: 0.75em;
+      font-size: 0.75rem;
       animation: fade-bottom 0.5s 3s 1 forwards;
     }
   }
@@ -70,14 +73,18 @@
     padding: 50px 0;
     border: solid var(--text);
     border-width: 3px 0;
+    @media (max-width: 713.19px) {
+      padding: 5% 0;
+    }
     &-contents {
       display: flex;
-      animation: slide 3s infinite linear;
       .panel {
-        min-width: 713.19px;
-        &:nth-child(n + 2) {
-          margin-left: -50px;
-        }
+        animation: slide 3s infinite linear;
+        width: 100vw;
+        max-width: 713.19px;
+        margin-left: -50px;
+        // &:nth-child(n + 2) {
+        // }
       }
     }
   }
@@ -94,10 +101,10 @@
   }
   @keyframes slide {
     0% {
-      translate: 331.595px;
+      transform: translate(calc(50% - 50px));
     }
     100% {
-      translate: -331.595px;
+      transform: translate(-50%);
     }
   }
 </style>
