@@ -26,7 +26,7 @@
     Like?! Wtf does this mean:
     <code>
       <i class="teal">&lt;</i><i class="blue">p</i><i class="teal">&gt;</i><br>
-        <div>According to <i class="teal">&lt;</i><i class="blue">a</i> <i class="yellow">href</i><i class="teal">=</i><i class="green">&quot;https://www.energysage.com/solar/solar-panel-output/&quot;</i><i class="teal">&gt;</i>energysage.com<i class="teal">&lt;/</i><i class="blue">a</i><i class="teal">&gt;</i>, 15 panels is on the lower end of the averages. If you use the higher range of said averages, you'd get 25 panels which could be generating a little over 45 kWh per day! That's enough that you realistically <i>could</i> start selling back electricity!</div>
+        <div class="indent">According to <i class="teal">&lt;</i><i class="blue">a</i> <i class="yellow">href</i><i class="teal">=</i><i class="green">&quot;https://www.energysage.com/solar/solar-panel-output/&quot;</i><i class="teal">&gt;</i>energysage.com<i class="teal">&lt;/</i><i class="blue">a</i><i class="teal">&gt;</i>, 15 panels is on the lower end of the averages. If you use the higher range of said averages, you'd get 25 panels which could be generating a little over 45 kWh per day! That's enough that you realistically <i>could</i> start selling back electricity!</div>
       <i class="teal">&lt;/</i><i class="blue">p</i><i class="teal">&gt;</i><br>
     </code>
   </div>
@@ -46,7 +46,7 @@
     border-radius: 20px;
     display: block;
     margin-top: 20px;
-    div {
+    .indent {
       padding-left: 2em;
     }
     font-family: "FiraCode Nerd Font", "Fira Code";
