@@ -32,9 +32,8 @@
   <Saos once={true}><MultiPanel /></Saos>
   <div class="quote">
     <div class="wrap-around right">Proident id veniam irure cillum irure nulla.</div>
-    Veniam cupidatat velit ut exercitation nisi amet id officia nulla Lorem deserunt quis. Ipsum amet
-    ut consectetur pariatur ea ad dolore aute sit enim excepteur do voluptate eiusmod. Id velit fugiat
-    magna sint ea. Sunt ullamco anim non nostrud deserunt nulla.
+    The average number of panels to power one home ranges from fifteen to twenty-five, which places this estimate at the low end of the scale. Assuming a home implements twenty-five, said home could generate over 45 kWh per day, which is enough to power a modern refrigerator for about <i class="c2">one full month</i>.
+    <p class="source">source: <a href="https://wattsguide.com/how-many-watts-does-a-refrigerator-use/">https://wattsguide.com/how-many-watts-does-a-refrigerator-use/</a></p>
   </div>
   <!-- TODO: Rephrase this: -->
   <!-- <p>
@@ -50,5 +49,8 @@
   }
   b{
     color: blue;
+  }
+  .source{
+    font-size: 12pt;
   }
 </style>
