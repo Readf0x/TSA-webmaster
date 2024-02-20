@@ -40,28 +40,28 @@
   p {
     text-align: center;
     translate: 0 15px;
-    opacity: 0;
-    animation: fade-bottom 0.5s 1s 1 forwards;
+    // opacity: 0;
+    // animation: fade-bottom 0.5s 1s 1 forwards;
   }
   h1 {
     &.beeg {
       font-size: 4rem;
       margin: -0.4em 0 0.25em;
-      animation: fade-bottom 0.5s 1.5s 1 forwards;
+      // animation: fade-bottom 0.5s 1.5s 1 forwards;
       @media (max-aspect-ratio: 3/4) {
         font-size: 15vw;
       }
     }
     &.bottom {
       margin-top: 0.75em;
-      animation: fade-bottom 0.5s 3s 1 forwards;
+      // animation: fade-bottom 0.5s 3s 1 forwards;
     }
   }
   p {
     &.asterisk {
       margin-top: -0.25em;
       font-size: 0.75rem;
-      animation: fade-bottom 0.5s 3s 1 forwards;
+      // animation: fade-bottom 0.5s 3s 1 forwards;
     }
   }
 
@@ -79,7 +79,7 @@
     &-contents {
       display: flex;
       .panel {
-        animation: slide 3s infinite linear;
+        animation: slide 5s infinite linear;
         width: 100vw;
         max-width: 713.19px;
         margin-left: -50px;

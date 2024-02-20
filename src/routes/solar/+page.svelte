@@ -7,6 +7,8 @@
 <div id="page">
   <Saos once={true}><SinglePanel /></Saos>
   <!-- TODO: Fact check -->
+  <!-- TODO: Re-add important info -->
+  <!-- TODO: Add animation -->
   <div class="quote">
     <div class="wrap-around">
       Installing solar panels costs an average of <i>$25,000.</i>
@@ -21,14 +23,9 @@
   <Saos once={true}><MultiPanel /></Saos>
   <div class="quote">
     <div class="wrap-around right">
-      Honestly I'm super lost bro
+      Proident id veniam irure cillum irure nulla.
     </div>
-    Like?! Wtf does this mean:
-    <code>
-      <i class="teal">&lt;</i><i class="blue">p</i><i class="teal">&gt;</i><br>
-        <div class="indent">According to <i class="teal">&lt;</i><i class="blue">a</i> <i class="yellow">href</i><i class="teal">=</i><i class="green">&quot;https://www.energysage.com/solar/solar-panel-output/&quot;</i><i class="teal">&gt;</i>energysage.com<i class="teal">&lt;/</i><i class="blue">a</i><i class="teal">&gt;</i>, 15 panels is on the lower end of the averages. If you use the higher range of said averages, you'd get 25 panels which could be generating a little over 45 kWh per day! That's enough that you realistically <i>could</i> start selling back electricity!</div>
-      <i class="teal">&lt;/</i><i class="blue">p</i><i class="teal">&gt;</i><br>
-    </code>
+    Veniam cupidatat velit ut exercitation nisi amet id officia nulla Lorem deserunt quis. Ipsum amet ut consectetur pariatur ea ad dolore aute sit enim excepteur do voluptate eiusmod. Id velit fugiat magna sint ea. Sunt ullamco anim non nostrud deserunt nulla.
   </div>
   <!-- TODO: Rephrase this: -->
   <!-- <p>
