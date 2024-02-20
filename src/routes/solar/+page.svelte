@@ -8,7 +8,7 @@
   <Saos once={true}><SinglePanel /></Saos>
   <!-- TODO: Fact check -->
   <!-- TODO: Re-add important info -->
-  <!-- TODO: Add animation -->
+  <!-- ? Add animation -->
   <div class="quote">
     <div class="wrap-around">
       Installing solar panels costs an average of <i>$25,000.</i>
