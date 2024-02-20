@@ -81,7 +81,9 @@ body {
       width: 60%;
       max-width: 500px;
       float: left;
-      &.right { float: right; }
+      &.right {
+        float: right;
+      }
       font-size: 1.25em;
       color: var(--accent);
       text-align: center;
@@ -93,7 +95,9 @@ body {
         margin-bottom: 0.5em;
       }
     }
-    p { margin: 0; }
+    p {
+      margin: 0;
+    }
     text-align: justify;
     @media (min-aspect-ratio: 3/4) {
       // border: 2px solid var(--text);

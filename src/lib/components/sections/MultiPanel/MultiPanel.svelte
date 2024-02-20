@@ -8,7 +8,7 @@
   function calcLength(): void {
     const dw = document.documentElement.clientWidth
     const pw = 713.19
-    if(dw <= pw * 3) length = Math.round(dw / (pw - 50)) + 2
+    if (dw <= pw * 3) length = Math.round(dw / (pw - 50)) + 2
     else length = 3
   }
 

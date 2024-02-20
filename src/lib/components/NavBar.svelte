@@ -19,14 +19,16 @@
   let mobileMenuButtonEl: HTMLButtonElement
 </script>
 
-<svelte:document on:click={ev => {
-  let t = ev.target
-  while(t) {
-    if(t == mobileCollapseEl || t == mobileMenuButtonEl) return
-    t = t.parentNode
-  }
-  mobileCollapseEl.setAttribute("data-disabled", "")
-}} />
+<svelte:document
+  on:click={(ev) => {
+    let t = ev.target
+    while (t) {
+      if (t == mobileCollapseEl || t == mobileMenuButtonEl) return
+      t = t.parentNode
+    }
+    mobileCollapseEl.setAttribute("data-disabled", "")
+  }}
+/>
 
 <nav data-platform="desktop">
   {#each リンク達 as リンク}
@@ -35,7 +37,11 @@
 </nav>
 
 <nav data-platform="mobile">
-  <button class="menu" bind:this={mobileMenuButtonEl} on:click={() => mobileCollapseEl.toggleAttribute("data-disabled")}>
+  <button
+    class="menu"
+    bind:this={mobileMenuButtonEl}
+    on:click={() => mobileCollapseEl.toggleAttribute("data-disabled")}
+  >
     <span class="menu-icon">
       <span class="line" />
       <span class="line" />
@@ -68,7 +74,9 @@
       }
     }
     &[data-platform="mobile"] {
-      a { width: 100%; }
+      a {
+        width: 100%;
+      }
       flex-direction: column;
       align-items: end;
       @media (min-aspect-ratio: 3/4) {
@@ -87,7 +95,9 @@
       transition: background-color 0.4s;
       /* *** DEV OUTLINE *** */
       // outline: 1px dashed #f339;
-      &:hover { background-color: $hover; }
+      &:hover {
+        background-color: $hover;
+      }
     }
     ul {
       background-color: var(--background);
@@ -97,8 +107,12 @@
       padding: 0;
       width: 100%;
       a {
-        &:hover { background-color: unset; }
-        &:active { background-color: $hover; }
+        &:hover {
+          background-color: unset;
+        }
+        &:active {
+          background-color: $hover;
+        }
         transition: background-color 0.2s;
       }
       overflow: hidden;

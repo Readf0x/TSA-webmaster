@@ -14,7 +14,9 @@
       Installing solar panels costs an average of <i>$25,000.</i>
     </div>
     <p>
-      While the initial investment is quite steep, clean energy initiatives from the US government offer substantial tax breaks. In combination with the power savings from the panels themselves, you'll likely start seeing returns on your investment within 2 to 4 years.
+      While the initial investment is quite steep, clean energy initiatives from the US government
+      offer substantial tax breaks. In combination with the power savings from the panels
+      themselves, you'll likely start seeing returns on your investment within 2 to 4 years.
     </p>
   </div>
   <!-- <p>
@@ -22,10 +24,10 @@
   </p> -->
   <Saos once={true}><MultiPanel /></Saos>
   <div class="quote">
-    <div class="wrap-around right">
-      Proident id veniam irure cillum irure nulla.
-    </div>
-    Veniam cupidatat velit ut exercitation nisi amet id officia nulla Lorem deserunt quis. Ipsum amet ut consectetur pariatur ea ad dolore aute sit enim excepteur do voluptate eiusmod. Id velit fugiat magna sint ea. Sunt ullamco anim non nostrud deserunt nulla.
+    <div class="wrap-around right">Proident id veniam irure cillum irure nulla.</div>
+    Veniam cupidatat velit ut exercitation nisi amet id officia nulla Lorem deserunt quis. Ipsum amet
+    ut consectetur pariatur ea ad dolore aute sit enim excepteur do voluptate eiusmod. Id velit fugiat
+    magna sint ea. Sunt ullamco anim non nostrud deserunt nulla.
   </div>
   <!-- TODO: Rephrase this: -->
   <!-- <p>
@@ -39,7 +41,7 @@
 <style lang="scss">
   code {
     padding: 10px;
-    border: 1px solid #74C7EC;
+    border: 1px solid #74c7ec;
     border-radius: 20px;
     display: block;
     margin-top: 20px;
@@ -52,10 +54,18 @@
     color: #cdd6f4;
     i {
       font-style: normal;
-      &.teal { color: #94e2d5; }
-      &.blue { color: #89b4fa; }
-      &.yellow { color: #f9e2af; }
-      &.green { color: #a6e3a1; }
+      &.teal {
+        color: #94e2d5;
+      }
+      &.blue {
+        color: #89b4fa;
+      }
+      &.yellow {
+        color: #f9e2af;
+      }
+      &.green {
+        color: #a6e3a1;
+      }
     }
   }
 </style>
