@@ -35,7 +35,11 @@
     The average number of panels to power one home ranges from fifteen to twenty-five, which places this estimate at the low end of the scale. Assuming a home implements twenty-five, said home could generate over 45 kWh per day, which is enough to power a modern refrigerator for about <i class="c2">one full month</i>.
     <p class="source">source: <a href="https://wattsguide.com/how-many-watts-does-a-refrigerator-use/">https://wattsguide.com/how-many-watts-does-a-refrigerator-use/</a> and <i class="c2">math</i></p>
   </div>
-  <!-- TODO: Rephrase this: -->
+  <div class="arg-filler-2">
+    <p>
+      The previous estimate of 45kWh per day, or nearly 1.3 MWh's per month, is enough to cover the average of 877 kWh per month used by each household, then sell the rest of that power back to the grid for around $65 per month if the power company buys excess power. This means that each month, a homeowner could earn $65 per month <i>passively</i> for the rest of the time they keep the panels maintained. Said passive money is in addition to saving an average of $140 per month on power bills. The excess power also allows for fluctuations in usage, extra time spent indoors like during the quarantine, and in extreme cases even living off grid entirely.
+    </p>
+  </div>
   <!-- <p>
     According to <a href="https://www.energysage.com/solar/solar-panel-output/">energysage.com</a>, 15 panels is on the lower end of the averages. If you use the higher range of said averages, you'd get 25 panels which could be generating a little over 45 kWh per day! That's enough that you realistically <i>could</i> start selling back electricity!
   </p> -->
