@@ -20,9 +20,9 @@
     </p>
   </div>
   <div class="arg-filler">
-  <!-- LMK if you're alright with the highlighted sentence, then delete -->
+    <!-- I think this could flow a little better, but for now it's fine -->
     <p>
-      Two to four years may sound like a long time to be non-returning, but considering there is little to no degredation over the first <i>twenty years</i>, there is a high likelyhood that this investment will actually <u><i>last</i></u>.  <b>Is this ok, or is it too fearmonger-ey:</b> <b class="ok">Along with being a lasting source of energy, it also provides the benefit of increasing the odds that the purchaser and their family are around long enough to reap the benefits, unlike coal power plants.</b>
+      Two to four years may sound like a long time to be non-returning, but considering there is little to no degredation over the first <i>twenty years</i>, there is a high likelyhood that this investment will actually <u><i>last</i></u>. Due to their tendency to last, companies also tend to offer comprehensive warranties for 15 to 25 years. If the panels do get damaged outside of that window, it can cost as little as $100, or as much as $3600 depending on the type or severity of the damage. The most common type of maintainance, though, is simply cleaning the panels of heavy snow and other major covers that can't wash off with rain or get blown off with wind. If time is not a concern, but money is, <a href="https://www.nerdwallet.com/article/finance/solar-panel-cost">nerdwallet.com</a> recomends shopping around for a better price, searching for local incentives for installing solar, or getting a loan. Alternatively, starting with just a few panels would still take a considerable amount off of each months power bill, and that excess could possibly go towards buying enough panels to fully power the home. 
     </p>
   </div>
 
@@ -33,7 +33,7 @@
   <div class="quote">
     <div class="wrap-around right">Proident id veniam irure cillum irure nulla.</div>
     The average number of panels to power one home ranges from fifteen to twenty-five, which places this estimate at the low end of the scale. Assuming a home implements twenty-five, said home could generate over 45 kWh per day, which is enough to power a modern refrigerator for about <i class="c2">one full month</i>.
-    <p class="source">source: <a href="https://wattsguide.com/how-many-watts-does-a-refrigerator-use/">https://wattsguide.com/how-many-watts-does-a-refrigerator-use/</a></p>
+    <p class="source">source: <a href="https://wattsguide.com/how-many-watts-does-a-refrigerator-use/">https://wattsguide.com/how-many-watts-does-a-refrigerator-use/</a> and <i class="c2">math</i></p>
   </div>
   <!-- TODO: Rephrase this: -->
   <!-- <p>
@@ -44,12 +44,6 @@
 </div>
 
 <style lang="scss">
-  b.ok{
-    color: red;
-  }
-  b{
-    color: blue;
-  }
   .source{
     font-size: 12pt;
   }
