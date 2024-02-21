@@ -24,6 +24,7 @@
     <p>
       Two to four years may sound like a long time to be non-returning, but considering there is little to no degredation over the first <i>twenty years</i>, there is a high likelyhood that this investment will actually <u><i>last</i></u>. Due to their tendency to last, companies also tend to offer comprehensive warranties for 15 to 25 years. If the panels do get damaged outside of that window, it can cost as little as $100, or as much as $3600 depending on the type or severity of the damage. The most common type of maintainance, though, is simply cleaning the panels of heavy snow and other major covers that can't wash off with rain or get blown off with wind. If time is not a concern, but money is, <a href="https://www.nerdwallet.com/article/finance/solar-panel-cost">nerdwallet.com</a> recomends shopping around for a better price, searching for local incentives for installing solar, or getting a loan. Alternatively, starting with just a few panels would still take a considerable amount off of each months power bill, and that excess could possibly go towards buying enough panels to fully power the home. 
     </p>
+    <p class="source">sources: <a href=https://www.homeadvisor.com/cost/heating-and-cooling/repair-solar-panels>https://www.homeadvisor.com/cost/heating-and-cooling/repair-solar-panels/</a> and <a href=https://www.usatoday.com/money/homefront/solar/solar-panel-maintenance>https://www.usatoday.com/money/homefront/solar/solar-panel-maintenance/</a></p>
   </div>
 
   <!-- <p>
