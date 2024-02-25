@@ -1,39 +1,14 @@
 <script lang="ts">
-  //@ts-nocheck
-  // import { onMount } from "svelte"
-
-  function createRippleOld(event) {
-    const button = event.currentTarget
-
-    const circle = document.createElement("span")
-    const diameter = Math.max(button.clientWidth, button.clientHeight)
-    const radius = diameter / 2
-    console.log(event.clientX - button.offsetLeft)
-    console.log(event.clientY - button.offsetTop)
-
-    circle.style.width = circle.style.height = `${diameter}px`
-    circle.style.left = `${event.clientX - button.offsetLeft - radius}px`
-    circle.style.top = `${event.clientY - button.offsetTop - radius}px`
-    circle.classList.add("ripple")
-
-    const ripple = button.getElementsByClassName("ripple")[0]
-
-    // if (ripple) {
-    //   ripple.remove();
-    // }
-
-    button.appendChild(circle)
-  }
-
   type Ripple = {
     diameter: number
     pos: [number, number]
     id: number
   }
+
   let ripples: Ripple[] = new Array()
   let id = 0
   function createRipple(ev: MouseEvent): void {
-    const button: HTMLButtonElement = ev.currentTarget
+    const button: any = ev.currentTarget
     ripples.push({
       diameter: Math.max(button.clientWidth, button.clientHeight),
       pos: [ev.clientX - button.offsetLeft, ev.clientY - button.offsetTop],
@@ -46,13 +21,6 @@
       ripples = ripples
     }, 1000)
   }
-
-  // onMount(() => {
-  //   const buttons = document.getElementsByTagName("button");
-  //   for (const button of buttons) {
-  //     button.addEventListener("click", createRipple);
-  //   }
-  // })
 </script>
 
 <button on:click={createRipple}>
@@ -79,8 +47,8 @@
     background: none;
     font: inherit;
     box-sizing: border-box;
-    display: contents;
-    :global(span.ripple) {
+    // display: contents;
+    span.ripple {
       position: absolute;
       border-radius: 50%;
       transform: scale(0);

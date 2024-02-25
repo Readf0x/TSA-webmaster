@@ -24,6 +24,7 @@
     let t = ev.target
     while (t) {
       if (t == mobileCollapseEl || t == mobileMenuButtonEl) return
+      //@ts-ignore
       t = t.parentNode
     }
     mobileCollapseEl.setAttribute("data-disabled", "")
@@ -97,6 +98,9 @@
       // outline: 1px dashed #f339;
       &:hover {
         background-color: $hover;
+      }
+      &:active {
+        background-color: transparent;
       }
     }
     ul {

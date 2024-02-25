@@ -22,7 +22,16 @@
   <div class="arg-filler">
     <!-- I think this could flow a little better, but for now it's fine -->
     <p>
-      Two to four years may sound like a long time to be non-returning, but considering there is little to no degredation over the first <i>twenty years</i>, there is a high likelyhood that this investment will actually <u><i>last</i></u>. Due to their tendency to last, companies also tend to offer comprehensive warranties for 15 to 25 years. If time is not a concern, but money is, <a href="https://www.nerdwallet.com/article/finance/solar-panel-cost">nerdwallet.com</a> recomends shopping around for a better price, searching for local incentives for installing solar, or getting a loan. Alternatively, starting with just a few panels would still take a considerable amount off of each months power bill, which could be set aside for buying enough panels to fully power the home. 
+      Two to four years may sound like a long time to be non-returning, but considering there is
+      little to no degredation over the first <i>twenty years</i>, there is a high likelyhood that
+      this investment will actually <u><i>last</i></u>. Due to their tendency to last, companies
+      also tend to offer comprehensive warranties for 15 to 25 years. If time is not a concern, but
+      money is,
+      <a href="https://www.nerdwallet.com/article/finance/solar-panel-cost">nerdwallet.com</a> recomends
+      shopping around for a better price, searching for local incentives for installing solar, or getting
+      a loan. Alternatively, starting with just a few panels would still take a considerable amount off
+      of each months power bill, which could be set aside for buying enough panels to fully power the
+      home.
     </p>
   </div>
 
@@ -32,12 +41,29 @@
   <Saos once={true}><MultiPanel /></Saos>
   <div class="quote">
     <div class="wrap-around right">Proident id veniam irure cillum irure nulla.</div>
-    The average number of panels to power one home ranges from fifteen to twenty-five, which places this estimate at the low end of the scale. Assuming a home implements twenty-five, said home could generate over 45 kWh per day, which is enough to power a modern refrigerator for about <i class="c2">one full month</i>.
-    <p class="source">source: <a href="https://wattsguide.com/how-many-watts-does-a-refrigerator-use/">https://wattsguide.com/how-many-watts-does-a-refrigerator-use/</a> and <i class="c2">math</i></p>
+    <p>
+      The average number of panels to power one home ranges from fifteen to twenty-five, which places this
+      estimate at the low end of the scale. Assuming a home implements twenty-five, said home could generate
+      over 45 kWh per day, which is enough to power a modern refrigerator for about <i class="c2"
+        >one full month</i
+      >.
+    </p>
+    <p class="source">
+      source: <a href="https://wattsguide.com/how-many-watts-does-a-refrigerator-use/"
+        >https://wattsguide.com/how-many-watts-does-a-refrigerator-use/</a
+      >
+      and <i class="c2">math</i>
+    </p>
   </div>
   <div class="arg-filler-2">
     <p>
-      To put the previous estimate into perspective, 45kWhs is enough to cover the average of 877 kWh per month used by each household, then sell the rest of that power back to the grid for around $65 per month if the power company buys excess power. This means that each month, a homeowner could earn $65 per month <i>passively</i> in addition to saving an average of $140 per month on power bills. The excess power could also be used in times like a blackout, or just to power devices for longer without having to worry about any impact to the power bill. Each of these benefits also still apply on the off chance that the power company doesn't buy excess power.
+      To put the previous estimate into perspective, 45kWhs is enough to cover the average of 877
+      kWh per month used by each household, then sell the rest of that power back to the grid for
+      around $65 per month if the power company buys excess power. This means that each month, a
+      homeowner could earn $65 per month <i>passively</i> in addition to saving an average of $140 per
+      month on power bills. The excess power could also be used in times like a blackout, or just to
+      power devices for longer without having to worry about any impact to the power bill. Each of these
+      benefits also still apply on the off chance that the power company doesn't buy excess power.
     </p>
   </div>
   <!-- <p>
@@ -48,7 +74,11 @@
 </div>
 
 <style lang="scss">
-  .source{
+  p {
+    text-align: justify;
+  }
+  .source {
     font-size: 12pt;
+    text-align: right;
   }
 </style>

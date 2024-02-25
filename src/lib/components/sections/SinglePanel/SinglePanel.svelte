@@ -65,7 +65,7 @@
 
   @keyframes from-right {
     0% {
-      translate: 110vw;
+      translate: 50vw;
       opacity: 1;
     }
     // 14.29% {
@@ -76,7 +76,7 @@
   }
   @keyframes from-left {
     0% {
-      translate: -110vw;
+      translate: -50vw;
       opacity: 1;
     }
     // 25% {
